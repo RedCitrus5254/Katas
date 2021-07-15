@@ -1,4 +1,4 @@
-﻿namespace BankOCR
+﻿namespace BankOCR.Infrastructure
 {
     public class AccountNumberCode
     {

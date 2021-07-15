@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
 
-namespace BankOCR
+namespace BankOCR.BusinessLogic.Interfaces
 {
     public interface IAccountNumberManager
     {
-        List<AccountNumber> GetAccountNumbers(
+        void StartTranslateAccountNumbers(
             string filePath);
     }
 }

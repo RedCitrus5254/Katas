@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using BankOCR;
+using BankOCR.Infrastructure;
 using FluentAssertions;
 namespace BankOCRTests
 {

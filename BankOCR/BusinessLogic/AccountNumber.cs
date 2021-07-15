@@ -1,13 +1,13 @@
-﻿namespace BankOCR
+﻿namespace BankOCR.BusinessLogic
 {
     public class AccountNumber
     {
         public AccountNumber(
-            int number)
+            string number)
         {
             Number = number;
         }
         
-        public int Number { get; }
+        public string Number { get; }
     }
 }

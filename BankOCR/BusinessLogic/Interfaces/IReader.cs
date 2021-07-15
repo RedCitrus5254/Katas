@@ -1,7 +1,8 @@
-﻿namespace BankOCR
+﻿using System.Collections.Generic;
+using BankOCR.Infrastructure;
+
+namespace BankOCR.BusinessLogic.Interfaces
 {
-    using System.Collections.Generic;
-    
     public interface IReader
     {
         List<AccountNumberCode> GetAccountNumberCodeList(

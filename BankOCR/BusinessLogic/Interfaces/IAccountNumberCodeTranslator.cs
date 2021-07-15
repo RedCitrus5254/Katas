@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
+using BankOCR.Infrastructure;
 
-namespace BankOCR
+namespace BankOCR.BusinessLogic.Interfaces
 {
     public interface IAccountNumberCodeTranslator
     {

@@ -1,9 +1,9 @@
-﻿using System.IO;
+﻿using System.Collections.Generic;
+using System.IO;
+using BankOCR.BusinessLogic.Interfaces;
 
-namespace BankOCR
+namespace BankOCR.Infrastructure
 {
-    using System.Collections.Generic;
-    
     public class FileReader: IReader 
     {
         public List<AccountNumberCode> GetAccountNumberCodeList(
