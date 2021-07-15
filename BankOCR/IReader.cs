@@ -4,7 +4,7 @@
     
     public interface IReader
     {
-        List<int> GetAccountNumberList(
+        List<AccountNumberCode> GetAccountNumberCodeList(
             string filePath);
     }
 }

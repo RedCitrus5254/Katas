@@ -1,8 +1,7 @@
-using System;
-using Xunit;
-
 namespace BankOCRTests
 {
+    using Xunit;
+
     public class UnitTest1
     {
         [Fact]
