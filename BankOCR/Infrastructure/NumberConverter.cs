@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using BankOCR.BusinessLogic;
 using BankOCR.BusinessLogic.Interfaces;
 
@@ -87,6 +88,12 @@ namespace BankOCR.Infrastructure
                         thirdString: codeNumber.Substring(6, 3)));
             }
             return number;
+        }
+
+        public string GetCode(
+            int number)
+        {
+            return numberDictionary.Keys.ToList()[number];
         }
     }
 }

@@ -8,11 +8,15 @@ namespace BankOCR
     {
         public static IAccountNumberManager CreateAccountNumberManager()
         {
+            var numberConverter = new NumberConverter();
+            
             return new AccountNumberManager(
-                new FileReader(),
-                new AccountNumberCodeTranslator(
-                    new NumberConverter()),
-                new AccountNumberValidator());
+                reader: new FileReader(),
+                accountNumberCodeTranslator: new AccountNumberCodeTranslator(
+                    numberConverter: numberConverter),
+                accountNumberValidator: new AccountNumberValidator(),
+                numberCorrector: new NumberCorrector(
+                    numberConverter: numberConverter));
         }
     }
 }
