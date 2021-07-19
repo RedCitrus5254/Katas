@@ -9,12 +9,13 @@ namespace FizzBuzz_WithoutMouse
             for (var i = 0; i < count; i++)
             {
                 var message = "";
-                if (IsDivisibleByDigit(i, 3))
+                
+                if (IsDivisibleByDigit(i, 3) || HasDigitInNumber(i, 3))
                 {
                     message += "Fizz";
                 }
 
-                if (IsDivisibleByDigit(i, 5))
+                if (IsDivisibleByDigit(i, 5) || HasDigitInNumber(i, 5))
                 {
                     message += "Buzz";
                 }
@@ -35,6 +36,23 @@ namespace FizzBuzz_WithoutMouse
             if (number % digit == 0)
             {
                 return true;
+            }
+
+            return false;
+        }
+
+        private bool HasDigitInNumber(
+            int number,
+            int digit)
+        {
+            while (number != 0)
+            {
+                if (number % 10 == digit)
+                {
+                    return true;
+                }
+
+                number /= 10;
             }
 
             return false;
