@@ -1,4 +1,4 @@
-﻿using BankOCR.BusinessLogic;
+using BankOCR.BusinessLogic;
 using BankOCR.BusinessLogic.Interfaces;
 using BankOCR.Infrastructure;
 
@@ -14,9 +14,7 @@ namespace BankOCR
                 reader: new FileReader(),
                 accountNumberCodeTranslator: new AccountNumberCodeTranslator(
                     numberConverter: numberConverter),
-                accountNumberValidator: new AccountNumberValidator(),
-                numberCorrector: new NumberCorrector(
-                    numberConverter: numberConverter));
+                accountNumberValidator: new AccountNumberValidator());
         }
     }
 }

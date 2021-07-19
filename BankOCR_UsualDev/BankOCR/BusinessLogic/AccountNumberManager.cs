@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using BankOCR.BusinessLogic.Interfaces;
 
 namespace BankOCR.BusinessLogic
@@ -8,18 +8,15 @@ namespace BankOCR.BusinessLogic
         private readonly IReader reader;
         private readonly IAccountNumberCodeTranslator accountNumberCodeTranslator;
         private readonly IAccountNumberValidator accountNumberValidator;
-        private readonly INumberCorrector numberCorrector;
 
         public AccountNumberManager(
         IReader reader,
         IAccountNumberCodeTranslator accountNumberCodeTranslator,
-        IAccountNumberValidator accountNumberValidator,
-        INumberCorrector numberCorrector)
+        IAccountNumberValidator accountNumberValidator)
         {
             this.reader = reader;
             this.accountNumberCodeTranslator = accountNumberCodeTranslator;
             this.accountNumberValidator = accountNumberValidator;
-            this.numberCorrector = numberCorrector;
         }
         public void StartTranslateAccountNumbers(
             string filePath)
@@ -37,33 +34,19 @@ namespace BankOCR.BusinessLogic
                 
                 if (accountNumbers[i].Number.Contains('?'))
                 {
-                    var correctedNumber = numberCorrector.CorrectNumber(
-                        uncorrectNumber: accountNumbers[i],
-                        accountNumberCode: accountNumberCodeList[i]);
-
-                    if (correctedNumber == accountNumbers[i])
-                    {
-                        message += "ILL";
-                        Console.WriteLine(message);
-                        Console.WriteLine("---------------------------------");
-                        continue;
-                    }
+                    message += "ILL";
+                    Console.WriteLine(message);
+                    Console.WriteLine("---------------------------------");
+                    continue;
                 }
                 
                 if (!accountNumberValidator.Validate(
                     accountNumber: accountNumbers[i]))
-                {                    
-                    var correctedNumber = numberCorrector.CorrectNumber(
-                        uncorrectNumber: accountNumbers[i],
-                        accountNumberCode: accountNumberCodeList[i]);
-
-                    if (correctedNumber == accountNumbers[i])
-                    {
-                        message += "ERR";
-                        Console.WriteLine(message);
-                        Console.WriteLine("---------------------------------");
-                        continue;
-                    }
+                {
+                    message += "ERR";
+                    Console.WriteLine(message);
+                    Console.WriteLine("---------------------------------");
+                    continue;
                     
                 }
                 
