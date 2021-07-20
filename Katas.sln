@@ -4,6 +4,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz_UsualDev", "FizzBu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz_WithoutMouse", "FizzBuzz_WithoutMouse\FizzBuzz_WithoutMouse.csproj", "{40E4D28D-0479-47B6-89B8-4410898420E3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz_TDD_WithoutMouse", "FizzBuzz_TDD_WithoutMouse\FizzBuzz_TDD_WithoutMouse.csproj", "{0E3B9C1F-5E37-4702-90C6-649F44D92C6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz_TDD_WithoutMouseTests", "FizzBuzz_TDD_WithoutMouseTests\FizzBuzz_TDD_WithoutMouseTests.csproj", "{B11011EE-441A-4CDB-8577-8EB772FB4B32}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +22,13 @@ Global
 		{40E4D28D-0479-47B6-89B8-4410898420E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40E4D28D-0479-47B6-89B8-4410898420E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40E4D28D-0479-47B6-89B8-4410898420E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E3B9C1F-5E37-4702-90C6-649F44D92C6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E3B9C1F-5E37-4702-90C6-649F44D92C6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E3B9C1F-5E37-4702-90C6-649F44D92C6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E3B9C1F-5E37-4702-90C6-649F44D92C6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B11011EE-441A-4CDB-8577-8EB772FB4B32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B11011EE-441A-4CDB-8577-8EB772FB4B32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B11011EE-441A-4CDB-8577-8EB772FB4B32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B11011EE-441A-4CDB-8577-8EB772FB4B32}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

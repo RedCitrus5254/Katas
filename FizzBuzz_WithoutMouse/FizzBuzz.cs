@@ -1,7 +1,7 @@
-﻿using System;
-
-namespace FizzBuzz_WithoutMouse
+﻿namespace FizzBuzz_WithoutMouse
 {
+    using System;
+
     public class FizzBuzz
     {
         public void Start(int count)
