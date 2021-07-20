@@ -13,14 +13,20 @@ namespace FizzBuzz_TDD_WithoutMouse
 
                 if (MathHelper.IsDividedByNumber(
                     divisible: i,
-                    divisor: 3))
+                    divisor: 3)
+                    || MathHelper.ContainsDigitInNumber(
+                    number: i,
+                    digit: 3))
                 {
                     message += "Fizz";
                 }
 
                 if (MathHelper.IsDividedByNumber(
                     divisible: i,
-                    divisor: 5))
+                    divisor: 5)
+                    || MathHelper.ContainsDigitInNumber(
+                        number: i,
+                        digit: 5))
                 {
                     message += "Buzz";
                 }

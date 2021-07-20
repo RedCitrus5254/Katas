@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace FizzBuzz_TDD_WithoutMouse
+﻿namespace FizzBuzz_TDD_WithoutMouse
 {
     class Program
     {
