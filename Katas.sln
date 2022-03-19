@@ -8,6 +8,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz_TDD_WithoutMouse",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz_TDD_WithoutMouseTests", "FizzBuzz_TDD_WithoutMouseTests\FizzBuzz_TDD_WithoutMouseTests.csproj", "{B11011EE-441A-4CDB-8577-8EB772FB4B32}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PathFinder.ReachTheExit", "PathFinder.ReachTheExit\PathFinder.ReachTheExit.csproj", "{1395E2CB-9D0E-47B9-A956-83E474A4921C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PathFinder.ReachTheExit.Tests", "PathFinder.ReachTheExit.Tests\PathFinder.ReachTheExit.Tests.csproj", "{D2B4E992-5A77-4A2F-A281-4CEEA0A5C26C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +34,13 @@ Global
 		{B11011EE-441A-4CDB-8577-8EB772FB4B32}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B11011EE-441A-4CDB-8577-8EB772FB4B32}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B11011EE-441A-4CDB-8577-8EB772FB4B32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1395E2CB-9D0E-47B9-A956-83E474A4921C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1395E2CB-9D0E-47B9-A956-83E474A4921C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1395E2CB-9D0E-47B9-A956-83E474A4921C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1395E2CB-9D0E-47B9-A956-83E474A4921C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2B4E992-5A77-4A2F-A281-4CEEA0A5C26C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2B4E992-5A77-4A2F-A281-4CEEA0A5C26C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2B4E992-5A77-4A2F-A281-4CEEA0A5C26C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2B4E992-5A77-4A2F-A281-4CEEA0A5C26C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
